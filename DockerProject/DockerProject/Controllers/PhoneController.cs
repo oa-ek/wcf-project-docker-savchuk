@@ -16,7 +16,7 @@ namespace DockerProject.Controllers
             ctx = _ctx;
         }
 
-        [HttpGet("{com}")]
+        [HttpGet("{company}")]
         public Company GetCompany(string com)
         {
             return ctx.Company.FirstOrDefault(x => x.Name == com);
